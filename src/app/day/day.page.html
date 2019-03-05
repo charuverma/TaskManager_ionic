@@ -1,0 +1,29 @@
+<ion-header class="header">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-icon name="more" (click)="mor()" class="more"></ion-icon>
+ <ion-title>
+    My Day<br>
+    {{today | date:'fullDate'}}
+ </ion-title> 
+ 
+ 
+
+</ion-header>
+
+<ion-content padding>
+    <ion-icon class="add1" name="add-circle" (click)="showactionsheet()">
+    
+    </ion-icon>
+    <!-- NEWWWWWWWW -->
+    
+    <ion-row *ngFor="let i of data1" >
+    
+        <!-- <ion-col   size="6">
+         <h2>Title:{{i.title}}</h2></ion-col>  -->
+               <h2 (click)="actionsheet()">Task:{{i.task}}</h2>
+               
+            
+    </ion-row> 
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header  style="background-color:purple;height:80px;">
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons> 
+      <ion-title style="margin-left:70px;font-size:30px;">NewList</ion-title>
+<!-- 
+ <ion-icon class="close"(click)="cross()" name="close-circle"></ion-icon>
+ <ion-icon class="circle" name="add-circle"></ion-icon>
+ <ion-input style="text-align:center" type="text" placeholder="Enter List Title" #title ></ion-input>
+ 
+
+ 
+<svg height="100" width="100" margin-left:40px>
+  <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="green" />
+</svg> 
+<svg height="100" width="100"  margin-left:10px>
+  <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="blue" />
+  </svg>
+  <svg height="100" width="100"  margin-left:10px>
+    <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+  
+    <ion-button color="Default"  (click)="list(title)" class="next"  >Create</ion-button> -->
+ 
+</ion-header>
+
+<ion-content padding>
+  <ion-icon class="close"(click)="cross()" name="close-circle"></ion-icon>
+  <ion-input style="text-align:center" type="text" placeholder="Enter List Title" #title ></ion-input>
+  
+ 
+  
+ <svg height="100" width="100" >
+   <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="green" />
+ </svg> 
+ <svg height="100" width="100" >
+   <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="blue" />
+   </svg>
+   <svg height="100" width="100"  >
+     <circle cx="50" cy="50" r="30" stroke="black" stroke-width="3" fill="red" />
+     </svg>
+   
+     <ion-button color="Default"  (click)="list(title)" class="next"  >Create</ion-button>
+</ion-content>

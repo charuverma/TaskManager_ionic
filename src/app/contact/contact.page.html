@@ -1,0 +1,23 @@
+ <ion-header class="header">
+    
+      <ion-icon name="arrow-back" class="iconn"></ion-icon>
+  <h1 class="add">Add Account</h1>
+</ion-header>
+    
+     
+<ion-content  padding style="text-align:center">
+   <!--  <label class="item item-input" >
+        <input  type="text" #contact placeholder="Contact No">
+      </label><br> -->
+      <label class="item item-input" >
+        <input  type="text"  #contact placeholder="Enter Contact">
+      </label><br>
+      
+      <ion-button  (click)="btn(contact.value)" color="default" class="button1" ><b style="font-size:20px;">Next</b>
+        <ion-icon name="arrow-round-forward" class="icon1" ></ion-icon>
+        
+      </ion-button>
+      <ion-button  (click)="sign()" color="default" class="button2" ><b style="font-size:20px;">Register</b></ion-button>
+    
+</ion-content>
+<ion-footer  class="footer" ></ion-footer>

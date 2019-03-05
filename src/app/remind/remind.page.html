@@ -1,0 +1,30 @@
+<ion-header style="background-color:purple;height:80px;">
+ 
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+
+    <ion-title style="margin-left:70px;font-size:30px;">Reminder</ion-title>
+ 
+</ion-header>
+
+<ion-content padding>
+  <ion-row *ngFor="let i of data1">
+    <ion-col >
+      <h4>Title:{{i.title}}</h4>
+    </ion-col>
+    <ion-col >
+        <h4>Date:{{i.date}}</h4>
+      </ion-col>
+      <ion-col >
+          <h4>Time:{{i.time}}</h4>
+        </ion-col>
+</ion-row>
+<ion-icon (click)="cir()" name="add-circle" class="circle" ></ion-icon>
+</ion-content>
+<ion-footer  class="footer" >
+
+
+ 
+ 
+</ion-footer>
